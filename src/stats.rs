@@ -8,7 +8,7 @@ mod timer;
 use crossbeam::channel::Receiver;
 use crossterm::{
     cursor, execute,
-    style::{self, Color, PrintStyledContent},
+    style::{self, Color, PrintStyledContent, Stylize},
     terminal::{Clear, ClearType},
 };
 use std::io::{self, Result, Stderr, Write};
@@ -50,7 +50,7 @@ fn output_progress(stderr: &mut Stderr, bytes: usize, elapsed: String, rate: f64
     let rate = style::style(format!(" [{:.0}b/s]", rate)).with(Color::Blue);
     let _ = execute!(
         stderr,
-        cursor::MoveToColumn(0),
+        cursor::MoveToColumn(1),
         Clear(ClearType::CurrentLine),
         PrintStyledContent(bytes),
         PrintStyledContent(elapsed),
