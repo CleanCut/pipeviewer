@@ -1,6 +1,6 @@
 [package]
 name = "pipeviewer"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 description = "Educational version of the pv utility"
 homepage = "https://github.com/cleancut/pipeviewer"
@@ -13,6 +13,6 @@ license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-clap = "2.33.0"
+clap = "3.2.5"
 crossbeam = "0.8.1"
 crossterm = "0.23.2"

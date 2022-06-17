@@ -24,10 +24,11 @@ I can be contacted via contact details on my website [agileperception.com].
 
 ## Update: 2022-06-17
 
-- Tag the update as `update-2022-06-17`†
-- Update from 2018 to 2021 edition of Rust†
-- Update all deep dependencies with `cargo update`†
-- Update `crossbeam` to version `0.8.1`†
-- Update `crossterm` to version `0.23.2`. Required bringing `crossterm::style::Stylize` into scope in `stats.rs`, and changing `cursor::MoveToColumn(0)` to `cursor::MoveToColumn(1)`.
+Changes since tag `5.5`:
 
-† No changes to the code were required for this step
+- Update `pipeviewer`'s version to `1.0.1` (and add a corresponding tag)
+- Update from 2018 to 2021 edition of Rust in `Cargo.toml`
+- Update `crossbeam` to version `0.8.1` in `Cargo.toml`
+- Update `crossterm` to version `0.23.2` in `Cargo.toml`. In `src/stats.rs`, bring `crossterm::style::Stylize` into scope in a `use` statement, and change `cursor::MoveToColumn(0)` to `cursor::MoveToColumn(1)`.
+- Update `clap` to version `3.2.5` in `Cargo.toml`. In `src/args.rs`, change `.short("o")` to `.short('o')` and `.short("s")` to `.short('s')`.
+- Update all deep dependencies by running `cargo update`
