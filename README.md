@@ -28,7 +28,13 @@ Changes since tag `5.5`:
 
 - Update `pipeviewer`'s version to `1.0.1` (and add a corresponding tag)
 - Update from 2018 to 2021 edition of Rust in `Cargo.toml`
-- Update `crossbeam` to version `0.8.1` in `Cargo.toml`
+- Update `crossbeam` to version `0.8.4` in `Cargo.toml`
 - Update `crossterm` to version `0.23.2` in `Cargo.toml`. In `src/stats.rs`, bring `crossterm::style::Stylize` into scope in a `use` statement, and change `cursor::MoveToColumn(0)` to `cursor::MoveToColumn(1)`.
 - Update `clap` to version `3.2.5` in `Cargo.toml`. In `src/args.rs`, change `.short("o")` to `.short('o')` and `.short("s")` to `.short('s')`.
 - Update all deep dependencies by running `cargo update`
+
+## Update: 2024-03-05
+
+Changes since previous update:
+
+- Update `crossbeam` to version `
