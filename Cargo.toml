@@ -15,4 +15,4 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 clap = "3.2.5"
 crossbeam = "0.8.4"
-crossterm = "0.23.2"
+crossterm = "0.29.0"
